@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ORIGIN 静态原型版本入口</title>
+    <style>
+      :root {
+        font-family:
+          Inter, "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", system-ui,
+          -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        color: #171a1f;
+        background: #f6f2ea;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+      }
+      main {
+        min-height: 100vh;
+        padding: clamp(32px, 7vw, 88px);
+      }
+      h1 {
+        font-size: 76px;
+        line-height: 0.92;
+        margin: 0;
+        max-width: 980px;
+      }
+      p {
+        color: #667079;
+        font-size: 18px;
+        line-height: 1.7;
+        max-width: 760px;
+      }
+      .grid {
+        display: grid;
+        gap: 14px;
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 42px;
+      }
+      a {
+        background: #fff;
+        border: 1px solid rgba(23, 26, 31, 0.12);
+        border-radius: 8px;
+        color: inherit;
+        min-height: 260px;
+        padding: 24px;
+        text-decoration: none;
+      }
+      a span {
+        color: #7c9b72;
+        display: block;
+        font-size: 12px;
+        font-weight: 900;
+        letter-spacing: 0;
+        margin-bottom: 54px;
+        text-transform: uppercase;
+      }
+      a strong {
+        display: block;
+        font-size: 38px;
+        line-height: 1;
+        margin-bottom: 16px;
+      }
+      a small {
+        color: #667079;
+        font-size: 16px;
+        line-height: 1.6;
+      }
+      @media (max-width: 1120px) {
+        .grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      @media (max-width: 680px) {
+        h1 {
+          font-size: 42px;
+        }
+        .grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>ORIGIN 官网静态原型版本入口</h1>
+      <p>原版保留，新增方案重点强化首页首屏以下的内容表现，不只是换颜色。</p>
+      <div class="grid">
+        <a href="./index.html">
+          <span>Current</span>
+          <strong>混合风格原版</strong>
+          <small>你觉得整体不错的当前版本，作为基准保留。</small>
+        </a>
+        <a href="./variant-theater.html">
+          <span>Variant A</span>
+          <strong>产品剧场</strong>
+          <small>更强调佩戴、记录、理解、行动的连续叙事。</small>
+        </a>
+        <a href="./variant-signal.html">
+          <span>Variant B</span>
+          <strong>信号杂志</strong>
+          <small>更强调强排版、数据面板和可信信息结构。</small>
+        </a>
+        <a href="./variant-six-zones.html">
+          <span>Variant C</span>
+          <strong>六区分屏</strong>
+          <small>六个页面组各自成为独立区域，用短句和结构感分流。</small>
+        </a>
+        <a href="./variant-draft-sketch.html">
+          <span>Draft</span>
+          <strong>官网设计稿草图</strong>
+          <small>按最新草案组织：固定导航、视频首屏、地图资质、硬件、App、AI、健康和底部联系。</small>
+        </a>
+        <a href="./variant-signal-care.html">
+          <span>Variant D</span>
+          <strong>照护信号版</strong>
+          <small>保留草案结构，但改成 ORIGIN 自己的照护信号系统，弱化 Fi 的黄黑和追踪器气质。</small>
+        </a>
+        <a href="./variant-origin-ai-care.html">
+          <span>Variant E</span>
+          <strong>AI 科技照护版</strong>
+          <small>首屏强化 AI 智能项圈的科技感，硬件与健康趋势使用参考视频，后半段回到温馨照护和服务分流。</small>
+        </a>
+      </div>
+    </main>
+  </body>
+</html>
