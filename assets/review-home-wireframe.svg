@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+  <rect width="1200" height="900" fill="#f8fafc"/>
+  <rect x="100" y="56" width="1000" height="788" rx="28" fill="#ffffff" stroke="#cbd5e1" stroke-width="4"/>
+  <rect x="134" y="94" width="932" height="64" rx="14" fill="#e2e8f0"/>
+  <text x="166" y="135" font-family="Arial,'Microsoft YaHei',sans-serif" font-size="24" fill="#0f172a">顶部固定栏：Logo / 首页导航 / 语言 / 商城 / 客服</text>
+  <rect x="134" y="190" width="932" height="138" rx="18" fill="#dbeafe" stroke="#60a5fa" stroke-width="4"/>
+  <text x="166" y="246" font-family="Arial,'Microsoft YaHei',sans-serif" font-size="30" font-weight="700" fill="#1e3a8a">首屏产品展示</text>
+  <text x="166" y="288" font-family="Arial,'Microsoft YaHei',sans-serif" font-size="22" fill="#1e40af">产品主视觉 + 科技感元素 + 一句话定位</text>
+  <rect x="134" y="360" width="932" height="84" rx="16" fill="#ecfdf5" stroke="#34d399" stroke-width="3"/>
+  <text x="166" y="413" font-family="Arial,'Microsoft YaHei',sans-serif" font-size="26" fill="#065f46">公司简介：品牌理念 / 关于我们 / 联系合作</text>
+  <rect x="134" y="476" width="440" height="92" rx="16" fill="#fff7ed" stroke="#fb923c" stroke-width="3"/>
+  <text x="166" y="532" font-family="Arial,'Microsoft YaHei',sans-serif" font-size="26" fill="#9a3412">硬件产品：项圈 / 参数 / 版本 / 购买入口</text>
+  <rect x="626" y="476" width="440" height="92" rx="16" fill="#fef9c3" stroke="#facc15" stroke-width="3"/>
+  <text x="658" y="532" font-family="Arial,'Microsoft YaHei',sans-serif" font-size="26" fill="#854d0e">App：界面 / 下载 / 安装 / 权限说明</text>
+  <rect x="134" y="600" width="440" height="92" rx="16" fill="#f0fdf4" stroke="#22c55e" stroke-width="3"/>
+  <text x="166" y="656" font-family="Arial,'Microsoft YaHei',sans-serif" font-size="26" fill="#166534">健康趋势：趋势提醒，不做医疗结论</text>
+  <rect x="626" y="600" width="440" height="92" rx="16" fill="#fdf2f8" stroke="#f472b6" stroke-width="3"/>
+  <text x="658" y="656" font-family="Arial,'Microsoft YaHei',sans-serif" font-size="26" fill="#9d174d">AI 情绪：温和观察，娱乐互动</text>
+  <rect x="134" y="724" width="932" height="72" rx="16" fill="#f1f5f9" stroke="#94a3b8" stroke-width="3"/>
+  <text x="166" y="769" font-family="Arial,'Microsoft YaHei',sans-serif" font-size="25" fill="#334155">底部服务区：安全隐私 / FAQ / 联系合作 / 法律页组</text>
+  <circle cx="1016" cy="812" r="34" fill="#e2e8f0" stroke="#64748b" stroke-width="3"/>
+  <text x="990" y="821" font-family="Arial,'Microsoft YaHei',sans-serif" font-size="20" fill="#334155">TOP</text>
+</svg>

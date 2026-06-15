@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760">
+  <rect width="1200" height="760" fill="#ffffff"/>
+  <text x="72" y="70" font-family="Arial,'Microsoft YaHei',sans-serif" font-size="34" font-weight="700" fill="#0f172a">官网整体结构：以首页为根目录</text>
+  <rect x="480" y="110" width="240" height="74" rx="20" fill="#0f766e"/>
+  <text x="553" y="157" font-family="Arial,'Microsoft YaHei',sans-serif" font-size="28" font-weight="700" fill="#ffffff">首页 /</text>
+  <g stroke="#94a3b8" stroke-width="3" fill="none">
+    <path d="M600 184 L190 260"/>
+    <path d="M600 184 L350 260"/>
+    <path d="M600 184 L510 260"/>
+    <path d="M600 184 L690 260"/>
+    <path d="M600 184 L850 260"/>
+    <path d="M600 184 L1010 260"/>
+  </g>
+  <g font-family="Arial,'Microsoft YaHei',sans-serif" font-size="22" fill="#0f172a">
+    <rect x="80" y="260" width="220" height="70" rx="16" fill="#dbeafe" stroke="#60a5fa" stroke-width="3"/>
+    <text x="124" y="304">/product 产品详情</text>
+    <rect x="320" y="260" width="220" height="70" rx="16" fill="#fef9c3" stroke="#facc15" stroke-width="3"/>
+    <text x="362" y="304">/shop 购买渠道</text>
+    <rect x="560" y="260" width="220" height="70" rx="16" fill="#ecfdf5" stroke="#34d399" stroke-width="3"/>
+    <text x="606" y="304">/app 下载页</text>
+    <rect x="800" y="260" width="220" height="70" rx="16" fill="#ede9fe" stroke="#a78bfa" stroke-width="3"/>
+    <text x="842" y="304">技术与平台能力</text>
+    <rect x="80" y="390" width="220" height="70" rx="16" fill="#fdf2f8" stroke="#f472b6" stroke-width="3"/>
+    <text x="132" y="434">支持 / FAQ</text>
+    <rect x="320" y="390" width="220" height="70" rx="16" fill="#fff7ed" stroke="#fb923c" stroke-width="3"/>
+    <text x="368" y="434">联系 / 合作</text>
+    <rect x="560" y="390" width="220" height="70" rx="16" fill="#f1f5f9" stroke="#94a3b8" stroke-width="3"/>
+    <text x="606" y="434">条款与条件</text>
+    <rect x="800" y="390" width="300" height="70" rx="16" fill="#fee2e2" stroke="#f87171" stroke-width="3"/>
+    <text x="872" y="434">安全与隐私</text>
+  </g>
+  <rect x="790" y="500" width="330" height="180" rx="18" fill="#fff7f7" stroke="#fca5a5" stroke-width="3"/>
+  <text x="822" y="542" font-family="Arial,'Microsoft YaHei',sans-serif" font-size="24" font-weight="700" fill="#991b1b">安全与隐私页目录</text>
+  <text x="822" y="582" font-family="Arial,'Microsoft YaHei',sans-serif" font-size="20" fill="#7f1d1d">用户权利 / Cookie 政策</text>
+  <text x="822" y="616" font-family="Arial,'Microsoft YaHei',sans-serif" font-size="20" fill="#7f1d1d">健康免责声明 / 数据采集</text>
+  <text x="822" y="650" font-family="Arial,'Microsoft YaHei',sans-serif" font-size="20" fill="#7f1d1d">删除、更正、导出 / 隐私联系</text>
+</svg>

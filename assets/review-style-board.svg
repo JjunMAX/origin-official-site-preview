@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650">
+  <rect width="1200" height="650" fill="#ffffff"/>
+  <text x="72" y="76" font-family="Arial,'Microsoft YaHei',sans-serif" font-size="34" font-weight="700" fill="#0f172a">视觉方向讨论板</text>
+  <rect x="80" y="126" width="300" height="150" rx="24" fill="#e0f2fe" stroke="#38bdf8" stroke-width="4"/>
+  <text x="126" y="194" font-family="Arial,'Microsoft YaHei',sans-serif" font-size="32" font-weight="700" fill="#075985">科技感</text>
+  <text x="126" y="236" font-family="Arial,'Microsoft YaHei',sans-serif" font-size="22" fill="#0369a1">首屏 / 硬件 / AI</text>
+  <rect x="450" y="126" width="300" height="150" rx="24" fill="#dcfce7" stroke="#4ade80" stroke-width="4"/>
+  <text x="496" y="194" font-family="Arial,'Microsoft YaHei',sans-serif" font-size="32" font-weight="700" fill="#166534">照护温馨</text>
+  <text x="496" y="236" font-family="Arial,'Microsoft YaHei',sans-serif" font-size="22" fill="#15803d">健康趋势 / 日常陪伴</text>
+  <rect x="820" y="126" width="300" height="150" rx="24" fill="#f8fafc" stroke="#94a3b8" stroke-width="4"/>
+  <text x="866" y="194" font-family="Arial,'Microsoft YaHei',sans-serif" font-size="32" font-weight="700" fill="#334155">可信克制</text>
+  <text x="866" y="236" font-family="Arial,'Microsoft YaHei',sans-serif" font-size="22" fill="#475569">隐私 / FAQ / 法律</text>
+  <text x="86" y="364" font-family="Arial,'Microsoft YaHei',sans-serif" font-size="26" font-weight="700" fill="#0f172a">色彩讨论</text>
+  <rect x="86" y="394" width="140" height="72" rx="14" fill="#0f766e"/>
+  <rect x="250" y="394" width="140" height="72" rx="14" fill="#2563eb"/>
+  <rect x="414" y="394" width="140" height="72" rx="14" fill="#f97316"/>
+  <rect x="578" y="394" width="140" height="72" rx="14" fill="#f8fafc" stroke="#cbd5e1" stroke-width="3"/>
+  <text x="86" y="520" font-family="Arial,'Microsoft YaHei',sans-serif" font-size="22" fill="#334155">会议确认：主色、辅助色、背景色、组件形态、图片/视频/3D 的使用优先级</text>
+</svg>
