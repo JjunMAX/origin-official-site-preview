@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ORIGIN 品牌故事沉浸式轮播</title>
+    <link rel="icon" href="./assets/origin-logo-mark.png" />
+    <link rel="stylesheet" href="./origin-ai-care.css" />
+  </head>
+  <body class="immersive-page">
+    <header class="site-header" aria-label="官网主导航">
+      <a class="brand" href="./index.html" aria-label="ORIGIN 首页">
+        <img src="./assets/origin-brand-adaptive.svg" alt="ORIGIN" />
+      </a>
+
+      <nav class="main-nav" aria-label="首页内容导航">
+        <a href="./index.html#hero">产品展示</a>
+        <a href="./index.html#company">公司简介</a>
+        <a href="./index.html#hardware">硬件</a>
+        <a href="./index.html#app">App</a>
+        <a href="./index.html#health">健康趋势</a>
+        <a href="./index.html#emotion">情绪识别</a>
+      </nav>
+
+      <div class="header-actions">
+        <label class="language-select">
+          <span>语言：</span>
+          <select aria-label="语言切换">
+            <option selected>中文</option>
+            <option>English</option>
+            <option>繁體</option>
+          </select>
+        </label>
+        <a class="shop-link" href="./shop.html">
+          <span class="bag-icon" aria-hidden="true"></span>
+          商城
+        </a>
+        <a class="support-link" href="./support.html" aria-label="客服">
+          <span class="headset-icon" aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div class="scroll-progress" aria-hidden="true">
+        <span id="scrollProgress"></span>
+      </div>
+    </header>
+
+    <main class="immersive-carousel-page">
+      <section class="immersive-carousel" aria-label="品牌故事大图沉浸式轮播">
+        <div class="immersive-carousel-track" id="immersiveCarouselTrack">
+          <article class="immersive-slide" id="cloud">
+            <img src="./assets/origin-company-carousel-cloud.png" alt="ORIGIN 云端照护能力大图展示" />
+            <div class="immersive-copy">
+              <p class="eyebrow">Cloud Care</p>
+              <h1>让照护能力，像云一样持续在线。</h1>
+              <p>
+                软硬件一体连接设备、App 与云端模型，把声音信号、活动状态和健康趋势汇总成可理解的照护线索。
+              </p>
+              <a class="line-button dark" href="./index.html#company">返回轻量轮播</a>
+            </div>
+          </article>
+
+          <article class="immersive-slide" id="companion">
+            <img src="./assets/origin-company-carousel-companion.png" alt="ORIGIN 长期陪伴场景大图展示" />
+            <div class="immersive-copy">
+              <p class="eyebrow">Companion</p>
+              <h1>把每一次陪伴，沉淀成成长记录。</h1>
+              <p>
+                从成长阶段、情绪变化到家庭照护节奏，ORIGIN 将碎片化日常整理成更温柔、更可回看的故事。
+              </p>
+              <a class="line-button dark" href="./index.html#company">返回轻量轮播</a>
+            </div>
+          </article>
+
+          <article class="immersive-slide" id="geofence">
+            <img src="./assets/origin-company-carousel-geofence.png" alt="ORIGIN 电子围栏与位置守护大图展示" />
+            <div class="immersive-copy">
+              <p class="eyebrow">Location Guard</p>
+              <h1>用电子围栏，守住每一次自由活动。</h1>
+              <p>
+                定位、围栏、状态展示和轨迹记录共同工作，让户外活动不只被看见，也能在需要时被及时提醒。
+              </p>
+              <a class="line-button dark" href="./index.html#company">返回轻量轮播</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="immersive-carousel-controls" aria-label="沉浸式轮播控制">
+          <button type="button" id="immersiveCarouselPrev" aria-label="上一张">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6" /></svg>
+          </button>
+          <button type="button" id="immersiveCarouselNext" aria-label="下一张">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6" /></svg>
+          </button>
+        </div>
+
+        <div class="immersive-carousel-dots" id="immersiveCarouselDots" aria-label="轮播页码"></div>
+      </section>
+    </main>
+
+    <script>
+      const progress = document.getElementById("scrollProgress");
+      const siteHeader = document.querySelector(".site-header");
+      const immersiveTrack = document.getElementById("immersiveCarouselTrack");
+      const immersivePrev = document.getElementById("immersiveCarouselPrev");
+      const immersiveNext = document.getElementById("immersiveCarouselNext");
+      const immersiveDots = document.getElementById("immersiveCarouselDots");
+
+      const updateProgress = () => {
+        const max = document.documentElement.scrollHeight - window.innerHeight;
+        const ratio = max > 0 ? window.scrollY / max : 0;
+        progress.style.transform = `scaleX(${Math.min(1, Math.max(0, ratio))})`;
+        siteHeader.classList.toggle("is-scrolled", window.scrollY > 24);
+      };
+
+      window.addEventListener("scroll", updateProgress, { passive: true });
+      window.addEventListener("resize", updateProgress);
+      updateProgress();
+
+      if (immersiveTrack && immersivePrev && immersiveNext && immersiveDots) {
+        const slides = [...immersiveTrack.querySelectorAll(".immersive-slide")];
+        let activeSlide = 0;
+
+        const dots = slides.map((slide, index) => {
+          const dot = document.createElement("button");
+          dot.type = "button";
+          dot.setAttribute("aria-label", slide.querySelector("h1").textContent);
+          dot.addEventListener("click", () => {
+            activeSlide = index;
+            updateImmersiveCarousel();
+          });
+          immersiveDots.appendChild(dot);
+          return dot;
+        });
+
+        const updateImmersiveCarousel = () => {
+          immersiveTrack.style.transform = `translateX(${-activeSlide * 100}%)`;
+          dots.forEach((dot, index) => {
+            dot.toggleAttribute("aria-current", index === activeSlide);
+          });
+        };
+
+        immersivePrev.addEventListener("click", () => {
+          activeSlide = (activeSlide - 1 + slides.length) % slides.length;
+          updateImmersiveCarousel();
+        });
+
+        immersiveNext.addEventListener("click", () => {
+          activeSlide = (activeSlide + 1) % slides.length;
+          updateImmersiveCarousel();
+        });
+
+        window.setInterval(() => {
+          activeSlide = (activeSlide + 1) % slides.length;
+          updateImmersiveCarousel();
+        }, 6200);
+
+        updateImmersiveCarousel();
+      }
+    </script>
+  </body>
+</html>

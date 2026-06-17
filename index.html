@@ -1,14 +1,15 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="zh-CN">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>ORIGIN 宠物 AI 智能项圈官网概念稿</title>
+    <link rel="icon" href="./assets/origin-logo-mark.png" />
     <link rel="stylesheet" href="./origin-ai-care.css" />
   </head>
   <body>
     <header class="site-header" aria-label="官网主导航">
-      <a class="brand" href="./variant-origin-ai-care.html" aria-label="ORIGIN 首页">
+      <a class="brand" href="./index.html" aria-label="ORIGIN 首页">
         <img
           src="./assets/origin-brand-adaptive.svg"
           alt="ORIGIN"
@@ -49,17 +50,24 @@
 
     <main>
       <section class="hero-section" id="hero">
-        <img
+        <video
           class="hero-media"
-          src="./assets/origin-collar-app-concept.png"
-          alt="ORIGIN 宠物 AI 智能项圈与 App 概念展示"
-        />
+          autoplay
+          loop
+          muted
+          playsinline
+          poster="./assets/origin-collar-app-concept.png"
+          aria-label="ORIGIN 宠物 AI 智能项圈动态展示"
+        >
+          <source src="./assets/origin-hero-care-loop.webm" type="video/webm" />
+        </video>
         <div class="hero-shade"></div>
         <div class="tech-grid" aria-hidden="true"></div>
 
         <div class="hero-content">
-          <h1 class="hero-statement-only">
-            ORIGIN 宠物 AI 智能项圈是一款能“听懂”宠物说话、实时守护宠物健康的智能穿戴设备。
+          <h1 class="hero-title hero-statement-only">
+            <span class="hero-title-main">“听懂”宠物说话</span>
+            <span class="hero-title-sub">实时守护宠物健康的智能穿戴设备</span>
           </h1>
         </div>
 
@@ -87,33 +95,123 @@
         </div>
       </section>
 
-      <section class="company-section page-band" id="company">
-        <div class="section-copy">
-          <p class="eyebrow">Company</p>
-          <h2>科技的意义，在于让生活更温暖。</h2>
+      <section class="company-section company-lite-section page-band" id="company">
+        <div class="section-copy company-lite-head">
+          <p class="eyebrow">Brand Updates</p>
+          <h2>卡页网格 + 轻量轮播。</h2>
           <p>
-            在 ORIGIN，我们用智能项圈回应那份无声的依赖，将纯粹的爱与云端智能无缝连接，捕捉每一次心跳与情绪，让爱清晰可见，我们想做那个懂得爱的翻译官。
+            上部保留重点内容做主打轮播，下部用网格展示日常动态，让第二部分既有视觉重心，也有信息广度。
           </p>
-          <div class="button-row">
-            <a class="primary-button light" href="./about.html">关于我们</a>
-            <a class="line-button" href="./contact.html">联系 / 合作</a>
-          </div>
         </div>
 
-        <div class="company-visual" aria-label="公司能力与可信信息示意">
-          <div class="company-map">
-            <span class="map-line line-a"></span>
-            <span class="map-line line-b"></span>
-            <span class="map-line line-c"></span>
-            <span class="map-pin pin-core">ORIGIN</span>
-            <span class="map-pin pin-ai">AI</span>
-            <span class="map-pin pin-cloud">Cloud</span>
-            <span class="map-pin pin-care">Care</span>
+        <div class="company-visual company-carousel company-lite-carousel" aria-label="最新动态轻量轮播">
+          <div class="company-module-label">
+            <span>上部（主打轮播）</span>
+            <strong>重点内容用大卡片呈现，可自动播放，也可手动切换。</strong>
           </div>
-          <div class="company-notes">
-            <span>软硬件一体</span>
-            <span>云端照护能力</span>
-            <span>长期陪伴场景</span>
+
+          <div class="company-feature-shell">
+            <div class="company-carousel-viewport company-feature-viewport">
+              <div class="company-carousel-track" id="companyCarouselTrack">
+                <article class="company-slide company-feature-slide" aria-label="第一组主打内容">
+                  <a class="company-feature-card company-feature-card-main" href="./brand-stories.html#cloud">
+                    <img src="./assets/origin-company-carousel-cloud.png" alt="ORIGIN 云端照护能力视觉图" />
+                    <div>
+                      <time datetime="2026-06">主推 · 2026.06</time>
+                      <h3>云端照护能力上线预告</h3>
+                      <p>围绕声音、活动与健康趋势建立连续观察，让家庭照护从零散记录变成可追踪的日常。</p>
+                    </div>
+                  </a>
+                  <div class="company-feature-stack">
+                    <a class="company-feature-card" href="./brand-stories.html#companion">
+                      <img src="./assets/origin-company-carousel-companion.png" alt="ORIGIN 长期陪伴场景视觉图" />
+                      <div>
+                        <time datetime="2026-06">产品</time>
+                        <h3>长期陪伴场景更新</h3>
+                      </div>
+                    </a>
+                    <a class="company-feature-card" href="./brand-stories.html#geofence">
+                      <img src="./assets/origin-company-carousel-geofence.png" alt="ORIGIN 电子围栏与位置守护视觉图" />
+                      <div>
+                        <time datetime="2026-06">守护</time>
+                        <h3>位置守护与电子围栏</h3>
+                      </div>
+                    </a>
+                  </div>
+                </article>
+
+                <article class="company-slide company-feature-slide" aria-label="第二组主打内容">
+                  <a class="company-feature-card company-feature-card-main" href="./brand-stories.html#companion">
+                    <img src="./assets/origin-draft-ai-health.png" alt="ORIGIN 健康趋势记录视觉图" />
+                    <div>
+                      <time datetime="2026-07">主推 · 2026.07</time>
+                      <h3>健康趋势记录</h3>
+                      <p>将吃饭、喝水、动静态状态转化成连续趋势，为异常变化提供更早的观察线索。</p>
+                    </div>
+                  </a>
+                  <div class="company-feature-stack">
+                    <a class="company-feature-card" href="./brand-stories.html#cloud">
+                      <img src="./assets/origin-collar-app-concept.png" alt="ORIGIN App 与智能项圈视觉图" />
+                      <div>
+                        <time datetime="2026-07">App</time>
+                        <h3>App 照护看板</h3>
+                      </div>
+                    </a>
+                    <a class="company-feature-card is-placeholder" href="./brand-stories.html#geofence">
+                      <div>
+                        <time>即将更新</time>
+                        <h3>更多品牌资讯</h3>
+                        <p>上线初期可保留占位，后续替换为活动、媒体报道或产品公告。</p>
+                      </div>
+                    </a>
+                  </div>
+                </article>
+              </div>
+            </div>
+
+            <div class="company-carousel-controls company-feature-controls" aria-label="最新动态轮播控制">
+              <button type="button" id="companyCarouselPrev" aria-label="上一组">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6" /></svg>
+              </button>
+              <button type="button" id="companyCarouselNext" aria-label="下一组">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6" /></svg>
+              </button>
+              <div class="company-carousel-dots" id="companyCarouselDots"></div>
+              <span>轻量轮播控制</span>
+            </div>
+          </div>
+
+          <div class="company-daily-block">
+            <div class="company-module-label">
+              <span>下部（日常动态）</span>
+              <strong>卡片网格展示全部动态，可按内容数量自然扩展。</strong>
+            </div>
+            <div class="company-daily-grid">
+              <article class="company-update-card">
+                <img src="./assets/origin-company-carousel-cloud.png" alt="ORIGIN 云端照护能力视觉图" />
+                <div>
+                  <time datetime="2026-06">2026.06</time>
+                  <h3>云端照护能力上线预告</h3>
+                  <p>声音、活动与健康趋势持续连接。</p>
+                </div>
+              </article>
+              <article class="company-update-card">
+                <img src="./assets/origin-company-carousel-companion.png" alt="ORIGIN 长期陪伴场景视觉图" />
+                <div>
+                  <time datetime="2026-06">2026.06</time>
+                  <h3>长期陪伴场景更新</h3>
+                  <p>成长记录与情绪辅助识别同步进入照护节奏。</p>
+                </div>
+              </article>
+              <article class="company-update-card">
+                <img src="./assets/origin-company-carousel-geofence.png" alt="ORIGIN 电子围栏与位置守护视觉图" />
+                <div>
+                  <time datetime="2026-06">2026.06</time>
+                  <h3>电子围栏与安全边界</h3>
+                  <p>定位、边界提醒与轨迹记录形成闭环。</p>
+                </div>
+              </article>
+            </div>
           </div>
         </div>
       </section>
@@ -334,17 +432,64 @@
 
     <script>
       const progress = document.getElementById("scrollProgress");
+      const siteHeader = document.querySelector(".site-header");
       const pawTop = document.querySelector(".paw-top");
+      const companyTrack = document.getElementById("companyCarouselTrack");
+      const companyPrev = document.getElementById("companyCarouselPrev");
+      const companyNext = document.getElementById("companyCarouselNext");
+      const companyDots = document.getElementById("companyCarouselDots");
 
       const updateProgress = () => {
         const max = document.documentElement.scrollHeight - window.innerHeight;
         const ratio = max > 0 ? window.scrollY / max : 0;
         progress.style.transform = `scaleX(${Math.min(1, Math.max(0, ratio))})`;
+        siteHeader.classList.toggle("is-scrolled", window.scrollY > 24);
       };
 
       window.addEventListener("scroll", updateProgress, { passive: true });
       window.addEventListener("resize", updateProgress);
       updateProgress();
+
+      if (companyTrack && companyPrev && companyNext && companyDots) {
+        const slides = [...companyTrack.querySelectorAll(".company-slide")];
+        let activeSlide = 0;
+
+        const dots = slides.map((_, index) => {
+          const dot = document.createElement("button");
+          dot.type = "button";
+          dot.setAttribute("aria-label", `查看第 ${index + 1} 张`);
+          dot.addEventListener("click", () => {
+            activeSlide = index;
+            updateCompanyCarousel();
+          });
+          companyDots.appendChild(dot);
+          return dot;
+        });
+
+        const updateCompanyCarousel = () => {
+          companyTrack.style.transform = `translateX(${-activeSlide * 100}%)`;
+          dots.forEach((dot, index) => {
+            dot.toggleAttribute("aria-current", index === activeSlide);
+          });
+        };
+
+        companyPrev.addEventListener("click", () => {
+          activeSlide = (activeSlide - 1 + slides.length) % slides.length;
+          updateCompanyCarousel();
+        });
+
+        companyNext.addEventListener("click", () => {
+          activeSlide = (activeSlide + 1) % slides.length;
+          updateCompanyCarousel();
+        });
+
+        window.setInterval(() => {
+          activeSlide = (activeSlide + 1) % slides.length;
+          updateCompanyCarousel();
+        }, 5200);
+
+        updateCompanyCarousel();
+      }
 
       pawTop.addEventListener("click", (event) => {
         event.preventDefault();
@@ -353,3 +498,4 @@
     </script>
   </body>
 </html>
+

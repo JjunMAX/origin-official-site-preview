@@ -34,3 +34,15 @@
 ## 查看方式
 
 直接用浏览器打开对应 HTML 文件即可，不需要启动服务。
+
+## 2026-06-17 Preview Baseline Update
+
+- `index.html` is the current GitHub Pages preview entry for `https://jjunmax.github.io/origin-official-site-preview/#hero`.
+- The top navigation uses a fixed black translucent bar with a 66px desktop height.
+- The hero media is a looping video asset: `assets/origin-hero-care-loop.webm`.
+- The second section uses a card-grid plus lightweight carousel pattern: featured cards on top, daily update cards below.
+- Supporting carousel image assets:
+  - `assets/origin-company-carousel-cloud.png`
+  - `assets/origin-company-carousel-companion.png`
+  - `assets/origin-company-carousel-geofence.png`
+- `brand-stories.html` keeps the immersive carousel detail page for linked cards.
