@@ -220,6 +220,16 @@ label {
   outline: none;
 }
 
+.language-select select option {
+  background: #111214;
+  color: #f5f7f7;
+}
+
+.language-select select option:checked {
+  background: #243238;
+  color: #ffffff;
+}
+
 .shop-link,
 .support-link {
   align-items: center;
@@ -675,8 +685,7 @@ label {
 }
 
 .company-section,
-.app-section,
-.emotion-section {
+.app-section {
   align-items: center;
   display: grid;
   gap: 64px;
@@ -1453,8 +1462,8 @@ body.immersive-page {
 }
 
 .app-card span,
-.trend-cards span,
-.emotion-card span {
+.app-feature-card span,
+.trend-cards span {
   color: #5d7077;
   font-size: 13px;
   font-weight: 880;
@@ -1516,6 +1525,50 @@ body.immersive-page {
   border-radius: 8px;
   font-weight: 820;
   padding: 14px;
+}
+
+.app-feature-board {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 28px;
+}
+
+.app-feature-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  display: grid;
+  gap: 12px;
+  min-height: 190px;
+  padding: 22px;
+}
+
+.app-feature-card.status {
+  background: #eaf7f3;
+}
+
+.app-feature-card.growth {
+  background: #fff0df;
+}
+
+.app-feature-card.emotion {
+  background: #f2f0fb;
+}
+
+.app-feature-card strong {
+  color: var(--ink);
+  font-size: 28px;
+  line-height: 1.1;
+}
+
+.app-feature-card p {
+  color: #556267;
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+.app-copy .primary-button {
+  margin-top: 28px;
 }
 
 .health-section {
@@ -1593,50 +1646,6 @@ body.immersive-page {
   background:
     linear-gradient(90deg, transparent 0 20%, var(--coral) 20% 24%, transparent 24% 50%, var(--coral) 50% 54%, transparent 54% 80%, var(--coral) 80% 84%, transparent 84%),
     linear-gradient(180deg, transparent 0 50%, rgba(17, 24, 29, 0.14) 50% 53%, transparent 53%);
-}
-
-.emotion-section {
-  background:
-    linear-gradient(135deg, rgba(255, 111, 87, 0.16), transparent 42%),
-    #fff9f1;
-}
-
-.emotion-board {
-  display: grid;
-  gap: 14px;
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.emotion-card {
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  display: grid;
-  min-height: 330px;
-  padding: 24px;
-}
-
-.emotion-card.relaxed {
-  background: #eaf7f3;
-}
-
-.emotion-card.playful {
-  background: #fff0df;
-}
-
-.emotion-card.quiet {
-  background: #f2f0fb;
-}
-
-.emotion-card strong {
-  align-self: end;
-  font-size: 46px;
-  line-height: 1;
-}
-
-.emotion-card p {
-  color: #556267;
-  font-size: 16px;
-  line-height: 1.65;
 }
 
 .service-section {
@@ -1875,7 +1884,6 @@ body.immersive-page {
 
   .company-section,
   .app-section,
-  .emotion-section,
   .hardware-stage,
   .health-layout,
   .service-grid {
@@ -1929,11 +1937,11 @@ body.immersive-page {
     min-height: 640px;
   }
 
-  .emotion-board {
+  .app-feature-board {
     grid-template-columns: 1fr;
   }
 
-  .emotion-card {
+  .app-feature-card {
     min-height: 220px;
   }
 
